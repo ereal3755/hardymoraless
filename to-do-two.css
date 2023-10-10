@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+.container{
+    position: absolute;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(135deg,#4C9141,#1D1E33 60%,#1D1E33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.to-do-app{
+    position: absolute;
+    top:100px;
+    height:50%;
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:white;
+    border-radius: 10px;
+}
+.logo{
+    position: absolute;
+    left:40px;
+    color: blue;
+    font-size: 1.2rem;
+    font-weight: 900;
+    top:30px;
+    display: flex;
+    align-items: center;
+    padding:5px;
+}
+.logo i{
+    transform: translateY(1px);
+}
+.data-input{
+    position: absolute;
+    width:420px;
+    height: 3rem;
+    top:90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+    border: none;
+}
+
+.data-input .input{
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    border-radius: 24px;
+    padding-left: 30px;
+    background: pink;
+    border: none;
+    outline: none;
+}
+.data-input .add{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    border-radius: 22px;
+    right: 0;
+    background: #ff5349;
+    color:white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.list-container{
+    position: absolute;
+    height:2.8rem;
+    width: 370px;
+    list-style: none;
+    top: 140px;
+    padding: 0;
+    font-size: 1.15rem;
+    margin:0;
+    transform: translateX(15px);
+}
+.list-container li{
+    position: relative;
+    margin: 5px 0;
+    font-weight: 550;
+    background: pink;
+}
+
+.list-container li .checkpoint{
+    position: absolute;
+    left:-20px;
+    transform: translateY(1.5px);
+}
+.list-container li button{
+    position: absolute;
+    right:0;
+}
+
+.list-container .toggling{
+    background:blue;
+    color:#B5B8B1;
+}
