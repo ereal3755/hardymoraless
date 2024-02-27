@@ -36,10 +36,10 @@ listContainer.addEventListener("click", function(e){
 },false);
 
 function saveData(){
-     localStorage.setItem("DATA",listContainer.innerHTML);
+     localStorage.setItem("atad",listContainer.innerHTML);
 }
 
 function showTask(){
-    listContainer.innerHTML=localStorage.getItem('DATA');
+    listContainer.innerHTML=localStorage.getItem('atad');
 }
 showTask();
